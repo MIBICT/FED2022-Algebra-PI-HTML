@@ -9,54 +9,74 @@
     <meta name="keywords" content="turizam,agencija,Avanturist">
     <meta name="author" content="Mladen Ivošević">
     <title>Turistička agencija &quot;Avanturist&quot;</title>
+    <style>
+        body {
+            max-width: 760px;
+        }
+        
+        .center {
+            margin: auto;
+            padding: 10px;
+        }
+        
+        footer {
+            text-align: center;
+        }
+    </style>
+
 </head>
 
 <body>
-    <header>
-        <h1>Turistička agencija &quot;Avanturist&quot;</h1>
-        <nav>
-            <ul>
-                <li><a href="#onama">O nama</a></li>
-                <li><a href="#djelatnosti">Naše djelatnosti</a></li>
-                <li><a href="#kontakt">Kontakt</a></li>
-            </ul>
-        </nav>
-        <hr>
-    </header>
-    <main>
-        <h1>Turistička agencija &quot;Avanturist&quot;</h1>
-        <section>
-            <h2 id="onama">O nama</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae omnis fugiat unde laboriosam ipsam quasi cumque inventore doloremque, doloribus molestiae saepe suscipit dolore minus delectus eaque aspernatur laborum esse placeat!</p>
-            <img src="images/team.jpg" width="760px" height="430px">
-        </section>
-        <section>
-            <h2 id="djelatnosti">Naše djelatnosti</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae omnis fugiat unde laboriosam ipsam quasi cumque inventore doloremque, doloribus molestiae saepe suscipit dolore minus delectus eaque aspernatur laborum esse placeat!</p>
-            <img src="images/rome.jpg" width="760px" height="430px">
-        </section>
-        <section>
-            <h2 id="kontakt">Kontakt</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae omnis fugiat unde laboriosam ipsam quasi cumque inventore doloremque, doloribus molestiae saepe suscipit dolore minus delectus eaque aspernatur laborum esse placeat!</p>
-            <h3>Kontakt obrazac</h3>
+    <div>
+        <header>
+            <h1>Turistička agencija &quot;Avanturist&quot;</h1>
+            <nav>
+                <ul>
+                    <li><a href="#onama">O nama</a></li>
+                    <li><a href="#djelatnosti">Naše djelatnosti</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                </ul>
+            </nav>
+            <hr>
+        </header>
+        <main>
+            <h1>Turistička agencija &quot;Avanturist&quot;</h1>
+            <section>
+                <h2 id="onama">O nama</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae omnis fugiat unde laboriosam ipsam quasi cumque inventore doloremque, doloribus molestiae saepe suscipit dolore minus delectus eaque aspernatur laborum esse placeat!</p>
+                <img src="images/team.jpg" width="760px" height="430px">
+            </section>
+            <section>
+                <h2 id="djelatnosti">Naše djelatnosti</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae omnis fugiat unde laboriosam ipsam quasi cumque inventore doloremque, doloribus molestiae saepe suscipit dolore minus delectus eaque aspernatur laborum esse placeat!</p>
+                <img src="images/rome.jpg" width="760px" height="430px">
+            </section>
+            <section>
+                <h2 id="kontakt">Kontakt</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae omnis fugiat unde laboriosam ipsam quasi cumque inventore doloremque, doloribus molestiae saepe suscipit dolore minus delectus eaque aspernatur laborum esse placeat!</p>
+                <h3>Kontakt obrazac</h3>
 
-            <form action="/action_page.php">
-                <label for="name">Ime i prezime:</label><br>
-                <input type="text" id="name" name="name" value="Ime i prezime" required><br><br>
-                <label for="email">E-mail adresa:</label><br>
-                <input type="text" id="email" name="email" value="E-mail adresa" required><br><br>
-                <label for="poruka">Vaša poruka:</label><br>
-                <textarea name="poruka" rows="10" cols="30">Upišite poruku...</textarea><br><br>
-                <input type="submit" value="Pošalji">
+                <form action="/action_page.php">
+                    <label for="name">Ime i prezime:</label><br>
+                    <input type="text" id="name" name="name" value="Ime i prezime" required><br><br>
+                    <label for="email">E-mail adresa:</label><br>
+                    <input type="text" id="email" name="email" value="E-mail adresa" required><br><br>
+                    <label for="poruka">Vaša poruka:</label><br>
+                    <textarea name="poruka" rows="10" cols="30">Upišite poruku...</textarea><br><br>
+                    <input type="submit" value="Pošalji">
 
-            </form>
-        </section>
-        <hr>
-    </main>
-    <footer>
-        Autorska prava pridržana - Turistička agencija &quot;Avanturist&quot; &copy; 2022 <br><br>
-        <a href="mailto:mladen.ivosevic@gmail.com"><img src="images/mail.png" width="64px" height="64px"></a>
-    </footer>
+                </form>
+            </section>
+            <hr>
+        </main>
+        <footer>
+            <p class="center"> Turistička agencija &quot;Avanturist&quot; <sup>&copy;</sup>&nbsp;<span id="year"></span>&nbsp;-&nbsp;Autorska prava pridržana</p>
+            <script>
+                document.getElementById("year").innerHTML = new Date().getFullYear();
+            </script>
+            <a href=" mailto:mladen.ivosevic@gmail.com "><img src="images/mail.png " width="32px " height="32px "></a>
+        </footer>
+    </div>
 </body>
 
 </html>
